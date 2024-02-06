@@ -21,7 +21,7 @@ body{
     align-items: center;
     flex-wrap: wrap;
 }
-header a{
+ a{
     text-decoration: none;
 }
 header ul{
@@ -93,7 +93,7 @@ header .auth .nav-logo{
 }
 @media screen and (max-width:768px){
    
-    header .container{
+    .container{
         width: calc( (100% - 50px) );
         /* background-color: aqua; */
     }
@@ -108,6 +108,10 @@ header .auth .nav-logo{
         
      
     }
+    .creative .unlock{
+        
+    }
+    
 }
 @media screen and (max-width:426px){
     header nav{
@@ -132,6 +136,7 @@ header .auth .nav-logo{
         
      
     }
+  
 }
 @media screen and (max-width:320px){
     header nav{
@@ -139,7 +144,7 @@ header .auth .nav-logo{
         flex-grow: 0;
     }
     
-    header .container{
+    .container{
         width: calc( (100% - 60px) );
     }
     header .logo{
@@ -156,4 +161,144 @@ header .auth .nav-logo{
         
      
     }
+}
+/* Section two  */
+.creative{
+    /* background-color: aqua; */
+    text-align: center;
+    padding: 85px 0;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+.creative .unlock{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    background-color:white;
+    border-radius: 10px;
+    padding: 13px;
+}
+.creative .unlock img{
+    width: 35px;
+}
+.creative .unlock h2{
+    font-size: 40px;
+}
+.creative .unlock h2 span{
+    color: #FF9500;
+}
+
+.creative .online{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 12px;
+    /* background-colo r: #FF9500; */
+}
+.creative .online h3{
+    font-size: 30px;
+}
+.creative .online p{
+    font-size: 14px;
+    color: #262626;
+}
+.creative .links{
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+    padding: 20px 0;
+    align-items: center;
+    /* background-color:aqua; */
+}
+.creative .links a{
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+
+}
+.creative .links .explore{
+    background-color: #FF9500;
+    color: white;
+}
+.creative .links .pricing{
+    background-color:white;
+    color:black;
+}
+@media screen and (max-width:768px){
+  
+    .creative .unlock h2{
+        font-size: 30px;
+    }
+    .creative .online h3{
+        font-size: 23px;
+    }
+    .creative .online p{
+        font-size:13px;
+    }
+    .creative .links a{
+        font-size: 12px;
+    
+    }
+    
+}
+@media screen and (max-width:426px){
+    .creative .unlock{
+        padding: 15px;
+        /* justify-content: center; */
+        align-items: center;
+    }
+    .creative .unlock h2{
+        font-size: 20px;
+      
+    }
+    .creative .online h3{
+        font-size: 25px;
+        /* background-color: #FF9500; */
+       
+    }
+    .creative .online p{
+        /* background-color: aqua; */
+        font-size:15px;
+    }
+
+    
+    .creative .links a{
+        font-size: 14px;
+    
+    }
+  
+}
+@media screen and (max-width:320px){
+    header nav{
+        display:none;
+        flex-grow: 0;
+    }
+    
+    .container{
+        width: calc( (100% - 60px) );
+    }
+    header .logo{
+        margin-right: 0px;
+    }
+    header .auth .nav-logo{
+        
+        display:inline;
+    }
+    header .auth a:last-of-type{
+        color:#F1F1F3;
+        background-color: #FF9500;
+        padding: 10px 15px; 
+        
+     
+    }
+}
+/* Section three */
+.websites .container{
+    background-color: black;
 }
