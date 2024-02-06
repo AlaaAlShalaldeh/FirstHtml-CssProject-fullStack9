@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap');
+body{
+    background-color:#F8F8F8;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    height: 99999px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: calc( 100% - 200px);
+    /* background-color: aqua; */
+    margin: auto;
+
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+header a{
+    text-decoration: none;
+}
+header ul{
+    list-style-type: none;
+}
+.active{
+    background-color:#F1F1F3;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+header{
+    background-color:#F8F8F8;
+    padding:20px 0;
+    border-bottom: 2px solid #F1F1F3;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    
+}
+header .logo{
+    margin-right: 40px;
+}
+header .logo img{
+    width: 35px;
+    border-radius: 10px;
+}
+header nav{
+    flex-grow: 1 ;
+   
+}
+header nav ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+
+header nav a{
+    color: black;
+}
+header .auth {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    /* background-color:aqua; */
+  }
+  header .auth a {
+    /* padding: 15px 30px; */
+    border-radius: 10px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+  }
+
+header .auth a:first-of-type{
+    color: black;
+}
+header .auth a:last-of-type{
+    color:#F1F1F3;
+    background-color: #FF9500;
+    padding: 15px 30px; 
+    
+ 
+}
+header .auth .nav-logo{
+    width: 35px;
+    display: none;
+}
+@media screen and (max-width:768px){
+   
+    header .container{
+        width: calc( (100% - 50px) );
+        /* background-color: aqua; */
+    }
+    header .logo{
+        margin-right: 20px;
+    }
+    
+    header .auth a:last-of-type{
+        color:#F1F1F3;
+        background-color: #FF9500;
+        padding: 15px 20px; 
+        
+     
+    }
+}
+@media screen and (max-width:426px){
+    header nav{
+        display:none;
+        flex-grow: 0;
+    }
+    
+    header .container{
+        width: calc( (100% - 100px) );
+    }
+    header .logo{
+        margin-right: 0px;
+    }
+    header .auth .nav-logo{
+        
+        display:inline;
+    }
+    header .auth a:last-of-type{
+        color:#F1F1F3;
+        background-color: #FF9500;
+        padding: 15px 20px; 
+        
+     
+    }
+}
+@media screen and (max-width:320px){
+    header nav{
+        display:none;
+        flex-grow: 0;
+    }
+    
+    header .container{
+        width: calc( (100% - 60px) );
+    }
+    header .logo{
+        margin-right: 0px;
+    }
+    header .auth .nav-logo{
+        
+        display:inline;
+    }
+    header .auth a:last-of-type{
+        color:#F1F1F3;
+        background-color: #FF9500;
+        padding: 10px 15px; 
+        
+     
+    }
+}
