@@ -2,7 +2,7 @@
 body {
   background-color: #f8f8f8;
   font-family: "Be Vietnam Pro", sans-serif;
-  height: 99999px;
+  /* height: 99999px; */
 }
 * {
   margin: 0;
@@ -327,9 +327,45 @@ header .auth .nav-logo {
 }
 /* Section three */
 .websites .container {
-  background-color: black;
-  height: 100px;
+  background-color: white;
+  /* height: 100px; */
+  border-radius: 10px;
+
 }
+.websites .row{
+ 
+ /* gap: 10px; */
+ padding: 2%;
+}
+.websites .row :last-of-type{
+ 
+ border: none;
+}
+.website-img{
+  /* background-color: #59595a; */
+  padding:2% 48px; 
+  border-right: 1px solid #F1F1F3;
+}
+.website-img .border-none{
+  border-right: none;
+}
+@media screen and (max-width: 1440px) {
+  .website-img{
+    
+    padding:2% 42px; 
+    
+  }
+}
+@media screen and (max-width: 1024px) {
+  .website-img{
+    
+    padding:2% 42px; 
+    
+  }
+}
+
+
+
 /* Section four  */
 .img-section {
   padding: 5% 0;
