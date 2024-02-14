@@ -192,11 +192,15 @@ header .auth .nav-logo {
   background-color: white;
   border-radius: 10px;
   padding: 13px;
+  position: relative;
 }
-.creative .unlock::before {
-  content: url(../img/puplic/lines.svg);
-  /* background-color: #ff9500; */
+
+.creative .unlock .unlock-logo{
+  position: absolute;
+  top: -27px;
+  left: -31px; 
 }
+
 .creative .unlock img {
   width: 40px;
 }
@@ -243,6 +247,18 @@ header .auth .nav-logo {
   color: black;
 }
 @media screen and (max-width: 768px) {
+  .creative {
+  
+    padding: 20% 0 5% 0;
+  }
+  .creative .unlock .unlock-logo{
+    position: absolute;
+    top: -20px;
+    left: -22px;
+    width: 30px;
+     
+  }
+
   .creative .unlock h2 {
     font-size: 30px;
   }
@@ -257,6 +273,17 @@ header .auth .nav-logo {
   }
 }
 @media screen and (max-width: 426px) {
+  .creative {
+  
+    padding: 30% 0 5% 0;
+  }
+  .creative .unlock .unlock-logo{
+    position: absolute;
+    top: -15px;
+    left: -10px;
+    /* width: 20px; */
+     
+  }
   .creative .unlock {
     padding: 15px;
     /* justify-content: center; */
@@ -1144,7 +1171,7 @@ header .auth .nav-logo {
 /* Pricing section */
 .pricing {
   /* background-color: #ff9500; */
-  padding: 2% 0;
+  padding: 6% 0;
 }
 .pricing .pricing-info {
   /* background-color:blueviolet ; */
